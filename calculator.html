@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SIMPLE CALCULATOR</title>
+    </head>
+    <body>
+        <h1>SIMPLE APP CALCULATOR</h1>
+        <div class="form">
+        <input type="number"id="num1"> <select by id="operator">
+            <option class="+">+</option>
+            <option class="-">-</option>
+            <option class="/">/</option>
+            <option class="*">*</option>
+        </select>          <input type="number"id="num2">=<input type id="answer">
+        <button onclick="check()">CALCULATE</button>
+        <script>
+            function check(){
+    const operator=document.getElementById=(operator).value;
+if(operator=="+"){
+    const num1=Number(document.getElementById("num1").value);
+    const num2=Number(document.getElementById("num2").value);
+    const sum=num1+num2;
+    document.getElementById("answer").innerHTML=sum;
+}elseif(operator=="-"){
+    const num1=Number(document.getElementById("num1").value);
+    const num2=Number(document.getElementById("num2").value);
+    const sum=num1-num2;
+}elseif(operator=="/"){
+    const num1=Number(document.getElementById("num1").value);
+    const num2=Number(document.getElementById("num2").value);
+    const sum=num1/num2;
+}
+
+    }
+          
+    
+        </script>
+    </body>
+</html>
